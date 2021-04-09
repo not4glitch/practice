@@ -13,6 +13,12 @@
 html {
   font-size: 62.5%;
 }
+.header {
+  background-image: url(./img/background-3.webp);
+  background-size: cover;
+  min-width: 100vh;
+  min-height: 100vh;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f5f6;
