@@ -98,15 +98,15 @@ nav ul {
   font-family: inherit;
 }
 .shop-now a:hover {
-  color: var(--main-grey);
+  color: var(--main-light);
   background-color: var(--primary-color);
 }
 .fav-order-btn button:hover {
-  color: var(--main-grey);
+  color: var(--main-light);
   background-color: var(--primary-color);
 }
 #top-brands a:hover {
-  color: var(--main-grey);
+  color: var(--main-light);
   background-color: var(--primary-color);
 }
 
@@ -115,7 +115,7 @@ nav ul {
 .trends-colorful a,
 .trends-blacknwhite a {
   background-color: var(--primary-color);
-  color: var(--main-grey);
+  color: var(--main-light);
   display: inline-block;
   border: 1.5px solid var(--primary-color);
   border-radius: 0.2rem;
