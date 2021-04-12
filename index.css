@@ -4,11 +4,14 @@
 }
 :root {
   --primary-color: #7bb57c;
+  --main-black: #070707;
+  --main-grey: #f7f5f6;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
@@ -16,12 +19,20 @@ html {
 .header {
   background-image: url(./img/background-3.webp);
   background-size: cover;
-  min-width: 100vh;
-  min-height: 100vh;
+}
+.upper-logo,
+.footer-logo {
+  width: 70px;
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f7f5f6;
+  background-color: var(--main-grey);
+}
+.container {
+  margin: auto;
+  max-width: 980px;
+  min-width: 320px;
+  padding: 30px;
 }
 header {
   background-image: url(./img/background-3.webp);
@@ -30,12 +41,27 @@ header {
   min-height: 100vh;
   background-position: top;
 }
-a {
+.intro p {
+  padding-top: 10px;
+}
+.first-banner .container {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.best-selling-products {
+  text-align: center;
+}
+.best-selling-products h2 {
+  font-size: 3rem;
+  padding: 15px;
+}
+.best-selling-products . a {
   text-decoration: none;
-  color: #333333;
+  color: var(--main-black);
 }
 footer a {
-  color: #ffffff;
+  color: var(--main-grey);
 }
 ul {
   list-style-type: none;
@@ -45,12 +71,21 @@ ul {
 }
 
 .intro h2 {
-  font-size: 9.2rem;
+  font-size: 7rem;
+  width: 100%;
 }
 footer {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: var(--main-black);
+  color: var(--main-grey);
 }
+nav ul {
+  display: none;
+}
+.promo img {
+  display: block;
+  width: 100%;
+}
+/*Buttons and controls*/
 .shop-now a,
 .fav-order-btn button,
 #top-brands a {
@@ -63,15 +98,15 @@ footer {
   font-family: inherit;
 }
 .shop-now a:hover {
-  color: #f7f5f6;
+  color: var(--main-grey);
   background-color: var(--primary-color);
 }
 .fav-order-btn button:hover {
-  color: #f7f5f6;
+  color: var(--main-grey);
   background-color: var(--primary-color);
 }
 #top-brands a:hover {
-  color: #f7f5f6;
+  color: var(--main-grey);
   background-color: var(--primary-color);
 }
 
@@ -80,7 +115,7 @@ footer {
 .trends-colorful a,
 .trends-blacknwhite a {
   background-color: var(--primary-color);
-  color: #f7f5f6;
+  color: var(--main-grey);
   display: inline-block;
   border: 1.5px solid var(--primary-color);
   border-radius: 0.2rem;
@@ -89,21 +124,29 @@ footer {
   font-size: 0.8rem;
   cursor: pointer;
   font-family: inherit;
+  text-decoration: none;
 }
 .go-to-btn a:hover {
-  background-color: #070707;
-  border: 1.5px solid #070707;
+  background-color: var(--main-black);
+  border: 1.5px solid var(--main-black);
 }
 .order-btn button:hover {
-  background-color: #070707;
-  border: 1.5px solid #070707;
+  background-color: var(--main-black);
+  border: 1.5px solid var(--main-black);
 }
 .trends-colorful a:hover {
-  background-color: #070707;
-  border: 1.5px solid #070707;
+  background-color: var(--main-black);
+  border: 1.5px solid var(--main-black);
 }
 .trends-blacknwhite a:hover {
-  background-color: #f7f5f6;
-  border: 1.5px solid #f7f5f6;
-  color: #070707;
+  background-color: var(--main-grey);
+  border: 1.5px solid var(--main-grey);
+  color: var(--main-black);
+}
+img {
+  display: block;
+  width: 100%;
+}
+.icon {
+  max-width: 30px;
 }

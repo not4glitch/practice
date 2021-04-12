@@ -10,27 +10,33 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav-bar">
-        <div class="container">
-          <img src="img/shop-logo-dark.png" id="upper-logo" alt="logo" />
-          <ul>
-            <li><a href="#promotions">Promotions</a></li>
-            <li><a href="#best-selling-products">Best-selling</a></li>
-            <li><a href="#favorite">2020 Collection</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li class="shop-now"><a href="#favorite">SHOP NOW</a></li>
-          </ul>
-        </div>
-      </nav>
-      <section class="intro">
-        <h2><span class="colored">Furniture</span> for Home &amp; Office</h2>
-        <p>500+ models of cushioned furniture and accessories</p>
-        <p class="go-to-btn">
-          <a href="#best-selling-products">Best-selling products</a>
-        </p>
-      </section>
+      <div class="inner-container">
+        <nav class="nav-bar">
+          <div class="container">
+            <img src="img/shop-logo-dark.png" class="upper-logo" alt="logo" />
+            <ul>
+              <li><a href="#promotions">Promotions</a></li>
+              <li><a href="#best-selling-products">Best-selling</a></li>
+              <li><a href="#favorite">2020 Collection</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li class="shop-now"><a href="#favorite">SHOP NOW</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="intro">
+          <div class="container">
+            <h2>
+              <span class="colored">Furniture</span> for Home &amp; Office
+            </h2>
+            <p>500+ models of cushioned furniture and accessories</p>
+            <p class="go-to-btn">
+              <a href="#best-selling-products">Best-selling products</a>
+            </p>
+          </div>
+        </section>
+      </div>
     </header>
     <section class="promo" id="promotions">
       <div class="container">
@@ -52,10 +58,13 @@
       </div>
     </section>
     <div class="first-banner">
-      <span>Top Collections</span> of Designer Cushioned Furniture
+      <div class="container">
+        <span class="colored">Top Collections</span> of Designer Cushioned
+        Furniture
+      </div>
     </div>
     <main>
-      <section id="best-selling-products">
+      <section id="best-selling-products" class="best-selling-products">
         <div class="container">
           <h2>Best-selling products</h2>
           <p>Our customers' faves of the week</p>
@@ -112,105 +121,107 @@
         </div>
       </div>
       <section id="favorite">
-        <h2>Our Fave Finds</h2>
-        <p>The best designer products from the 2020 collections.</p>
-        <div id="armchairs">
-          <div class="container">
-            <div>
-              <img src="img/armchair-fusion.png" alt="modern yellow chair" />
-              <h3>Fusion armchair, LEXX</h3>
-              <p class="price">$320,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/armchair-aurora.png" alt="classic chair" />
-              <h3>Aurora armchair, MDS</h3>
-              <p class="price">$210,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/armchair-cloud.png" alt="blue chair" />
-              <h3>Cloud armchair, DIX</h3>
-              <p class="price">$150,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/armchair-jeanine.png" alt="gray chair" />
-              <h3>Jeanine armchair, KUKO</h3>
-              <p class="price">$210,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-          </div>
-        </div>
-        <div id="lamps">
-          <div class="container">
-            <div>
-              <img src="img/lamp-minimal.png" alt="3 piece white lamp" />
-              <h3>3-piece Minimal, ARM</h3>
-              <p class="price">$110,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/lamp-red-drops.png" alt="2 piece red lamp" />
-              <h3>Red Drops, KUKO</h3>
-              <p class="price">$210,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/lamp-delar.png" alt="2 piece golden lamp" />
-              <h3>Delar, Uni Studio</h3>
-              <p class="price">$350,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/lamp-bubbles.png" alt="3 piece bubble lamp" />
-              <h3>Bubbles, Udion</h3>
-              <p class="price">$410,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
+        <div class="container">
+          <h2>Our Fave Finds</h2>
+          <p>The best designer products from the 2020 collections.</p>
+          <div id="armchairs">
+            <div class="container">
+              <div>
+                <img src="img/armchair-fusion.png" alt="modern yellow chair" />
+                <h3>Fusion armchair, LEXX</h3>
+                <p class="price">$320,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/armchair-aurora.png" alt="classic chair" />
+                <h3>Aurora armchair, MDS</h3>
+                <p class="price">$210,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/armchair-cloud.png" alt="blue chair" />
+                <h3>Cloud armchair, DIX</h3>
+                <p class="price">$150,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/armchair-jeanine.png" alt="gray chair" />
+                <h3>Jeanine armchair, KUKO</h3>
+                <p class="price">$210,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="tables">
-          <div class="container">
-            <div>
-              <img src="img/table-upi.png" alt="white table" />
-              <h3>Upi table, Landstrom</h3>
-              <p class="price">$90,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/table-monica.png" alt="golden table" />
-              <h3>Monica table, Orro</h3>
-              <p class="price">$110,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/table-snitch.png" alt="wooden cabinet" />
-              <h3>Snitch cabinet, ARM</h3>
-              <p class="price">$100,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
-            </div>
-            <div>
-              <img src="img/table-hugo.png" alt="modern table" />
-              <h3>Hugo table, KUKO studio</h3>
-              <p class="price">$99,00USD</p>
-              <p class="fav-order-btn"><button>Order now</button></p>
+          <div id="lamps">
+            <div class="container">
+              <div>
+                <img src="img/lamp-minimal.png" alt="3 piece white lamp" />
+                <h3>3-piece Minimal, ARM</h3>
+                <p class="price">$110,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/lamp-red-drops.png" alt="2 piece red lamp" />
+                <h3>Red Drops, KUKO</h3>
+                <p class="price">$210,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/lamp-delar.png" alt="2 piece golden lamp" />
+                <h3>Delar, Uni Studio</h3>
+                <p class="price">$350,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/lamp-bubbles.png" alt="3 piece bubble lamp" />
+                <h3>Bubbles, Udion</h3>
+                <p class="price">$410,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="partners">
-          <img src="img/partner-artvan-logo.png" alt="artvan logo" />
-          <img src="img/partner-ikea-logo.png" alt="ikea logo" />
-          <img src="img/partner-vitra-logo.png" alt="vitra logo" />
-          <img src="img/partner-walmart-logo.png" alt="walmart logo" />
-          <img src="img/partner-kronheims-logo.png" alt="kronheims logo" />
-          <img src="img/partner-seamans-logo.png" alt="seamans logo" />
-          <img src="img/partner-idea-logo.png" alt="idea logo" />
+          <div id="tables">
+            <div class="container">
+              <div>
+                <img src="img/table-upi.png" alt="white table" />
+                <h3>Upi table, Landstrom</h3>
+                <p class="price">$90,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/table-monica.png" alt="golden table" />
+                <h3>Monica table, Orro</h3>
+                <p class="price">$110,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/table-snitch.png" alt="wooden cabinet" />
+                <h3>Snitch cabinet, ARM</h3>
+                <p class="price">$100,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+              <div>
+                <img src="img/table-hugo.png" alt="modern table" />
+                <h3>Hugo table, KUKO studio</h3>
+                <p class="price">$99,00USD</p>
+                <p class="fav-order-btn"><button>Order now</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="partners">
+            <img src="img/partner-artvan-logo.png" alt="artvan logo" />
+            <img src="img/partner-ikea-logo.png" alt="ikea logo" />
+            <img src="img/partner-vitra-logo.png" alt="vitra logo" />
+            <img src="img/partner-walmart-logo.png" alt="walmart logo" />
+            <img src="img/partner-kronheims-logo.png" alt="kronheims logo" />
+            <img src="img/partner-seamans-logo.png" alt="seamans logo" />
+            <img src="img/partner-idea-logo.png" alt="idea logo" />
+          </div>
         </div>
       </section>
     </main>
     <section id="top-brands">
-      <div class="container">
+      <div>
         <p>Our Top Brands</p>
         <h2>Colorful Collections by KUKO</h2>
         <p>
@@ -222,7 +233,7 @@
         <a href="#favorite">Shop KUKO</a>
         <img src="img/top-brands-kuko.jfif" alt="modern sofa" />
       </div>
-      <div class="container">
+      <div>
         <img src="img/top-brands-landstrom.jfif" alt="classic sofa" />
         <p>Our Top Brands</p>
         <h2>Classics by Landstrom Design</h2>
@@ -236,206 +247,228 @@
       </div>
     </section>
     <section id="testimonials">
-      <h2>What Our Customers Say</h2>
-      <p>We love your feedback on our products!</p>
-      <div class="clients">
-        <div>
-          <img src="img/customer-judy.jfif" alt="woman photo" />
-          <h2>Judy Peterson</h2>
-          <h3>New York</h3>
-          <blockquote>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-            necessitatibus perspiciatis earum repudiandae id expedita quis quod
-            quam vitae, maiores laborum numquam. Voluptates alias sit veritatis
-            recusandae quas! Ab, hic.
-          </blockquote>
-          <h3>October 28, 2018</h3>
-        </div>
-        <div>
-          <img src="img/customer-kyle.jfif" alt="man photo" />
-          <h2>Kyle Hudson</h2>
-          <h3>Houston</h3>
-          <blockquote>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-            necessitatibus perspiciatis earum repudiandae id expedita quis quod
-            quam vitae, maiores laborum numquam. Voluptates alias sit veritatis
-            recusandae quas! Ab, hic.
-          </blockquote>
-          <h3>June 13, 2019</h3>
-        </div>
-        <div>
-          <img src="img/customer-hanna.jfif" alt="woman photo" />
-          <h2>Hanna Levy</h2>
-          <h3>Boston</h3>
-          <blockquote>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-            necessitatibus perspiciatis earum repudiandae id expedita quis quod
-            quam vitae, maiores laborum numquam. Voluptates alias sit veritatis
-            recusandae quas! Ab, hic.
-          </blockquote>
-          <h3>October 04, 2019</h3>
-        </div>
-        <div>
-          <img src="img/customer-jim.jfif" alt="man photo" />
-          <h2>Jim Mockeen</h2>
-          <h3>Chicago</h3>
-          <blockquote>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-            necessitatibus perspiciatis earum repudiandae id expedita quis quod
-            quam vitae, maiores laborum numquam. Voluptates alias sit veritatis
-            recusandae quas! Ab, hic.
-          </blockquote>
-          <h3>January 18, 2020</h3>
-        </div>
-        <div>
-          <img src="img/customer-karen.jfif" alt="woman photo" />
-          <h2>Karen Morning</h2>
-          <h3>Washington</h3>
-          <blockquote>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-            necessitatibus perspiciatis earum repudiandae id expedita quis quod
-            quam vitae, maiores laborum numquam. Voluptates alias sit veritatis
-            recusandae quas! Ab, hic.
-          </blockquote>
-          <h3>February 03, 2020</h3>
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <p>We love your feedback on our products!</p>
+        <div class="clients">
+          <div>
+            <img src="img/customer-judy.jfif" alt="woman photo" />
+            <h2>Judy Peterson</h2>
+            <h3>New York</h3>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              necessitatibus perspiciatis earum repudiandae id expedita quis
+              quod quam vitae, maiores laborum numquam. Voluptates alias sit
+              veritatis recusandae quas! Ab, hic.
+            </blockquote>
+            <h3>October 28, 2018</h3>
+          </div>
+          <div>
+            <img src="img/customer-kyle.jfif" alt="man photo" />
+            <h2>Kyle Hudson</h2>
+            <h3>Houston</h3>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              necessitatibus perspiciatis earum repudiandae id expedita quis
+              quod quam vitae, maiores laborum numquam. Voluptates alias sit
+              veritatis recusandae quas! Ab, hic.
+            </blockquote>
+            <h3>June 13, 2019</h3>
+          </div>
+          <div>
+            <img src="img/customer-hanna.jfif" alt="woman photo" />
+            <h2>Hanna Levy</h2>
+            <h3>Boston</h3>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              necessitatibus perspiciatis earum repudiandae id expedita quis
+              quod quam vitae, maiores laborum numquam. Voluptates alias sit
+              veritatis recusandae quas! Ab, hic.
+            </blockquote>
+            <h3>October 04, 2019</h3>
+          </div>
+          <div>
+            <img src="img/customer-jim.jfif" alt="man photo" />
+            <h2>Jim Mockeen</h2>
+            <h3>Chicago</h3>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              necessitatibus perspiciatis earum repudiandae id expedita quis
+              quod quam vitae, maiores laborum numquam. Voluptates alias sit
+              veritatis recusandae quas! Ab, hic.
+            </blockquote>
+            <h3>January 18, 2020</h3>
+          </div>
+          <div>
+            <img src="img/customer-karen.jfif" alt="woman photo" />
+            <h2>Karen Morning</h2>
+            <h3>Washington</h3>
+            <blockquote>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              necessitatibus perspiciatis earum repudiandae id expedita quis
+              quod quam vitae, maiores laborum numquam. Voluptates alias sit
+              veritatis recusandae quas! Ab, hic.
+            </blockquote>
+            <h3>February 03, 2020</h3>
+          </div>
         </div>
       </div>
     </section>
     <section id="aboutus">
-      <div class="about-left">
-        <p>About Us</p>
-        <h2>We sell designer furniture, lamps & decor across the USA</h2>
-        <div>
-          <button>How to make an order ?</button>
+      <div class="container">
+        <div class="about-left">
+          <p>About Us</p>
+          <h2>We sell designer furniture, lamps & decor across the USA</h2>
           <div>
-            <p>
-              Specify the name of the preferred product in our contact form and
-              provide all the needed details. Our manager will contact you soon
-              after checking the stock status.
-            </p>
-          </div>
-          <button>Dispatch v Delivery</button>
-          <div>
-            <p>
-              On the product page, you can see a dispatch estimate e.g. 'within
-              2-3 weeks'. Dispatch is when we send the item to our delivery
-              partner, not the date it is delivered to your door. If you need
-              more accurate delivery times, check it with the manager
-            </p>
-          </div>
-          <button>Returns & Refunds</button>
-          <div>
-            <p>
-              If you won't like the product, you can return it to us within 14
-              days for a full refund. Simply contact us and we will assist you
-              with your return. Remember that you'll need to disassemble the
-              item and repackage it, in order for us to collect the product and
-              return it to the warehouse.
-            </p>
+            <button>How to make an order ?</button>
+            <div>
+              <p>
+                Specify the name of the preferred product in our contact form
+                and provide all the needed details. Our manager will contact you
+                soon after checking the stock status.
+              </p>
+            </div>
+            <button>Dispatch v Delivery</button>
+            <div>
+              <p>
+                On the product page, you can see a dispatch estimate e.g.
+                'within 2-3 weeks'. Dispatch is when we send the item to our
+                delivery partner, not the date it is delivered to your door. If
+                you need more accurate delivery times, check it with the manager
+              </p>
+            </div>
+            <button>Returns & Refunds</button>
+            <div>
+              <p>
+                If you won't like the product, you can return it to us within 14
+                days for a full refund. Simply contact us and we will assist you
+                with your return. Remember that you'll need to disassemble the
+                item and repackage it, in order for us to collect the product
+                and return it to the warehouse.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-right">
-        <h2>Some image or video</h2>
+        <div class="about-right">
+          <h2>Some image or video</h2>
+        </div>
       </div>
     </section>
     <section class="blog" id="blog">
-      <h2>Our blog</h2>
-      <p>Top tips from our designers</p>
-      <div class="posted-blog">
-        <h2>No blog posts yet ...</h2>
+      <div class="container">
+        <h2>Our blog</h2>
+        <p>Top tips from our designers</p>
+        <div class="posted-blog">
+          <h2>No blog posts yet ...</h2>
+        </div>
       </div>
     </section>
     <section class="our-pros">
-      <div class="pros">
-        <img src="img/pros-logo-cart.svg" alt="cart" width="60" />
-        <h2>Next-day Delivery</h2>
-        <p>
-          Free next-day delivery to any corner of the USA for all orders over
-          $300.
-        </p>
-      </div>
-      <div class="pros">
-        <img src="img/pros-logo-cash.svg" alt="cash" width="60" />
-        <h2>100% Money back</h2>
-        <p>
-          If you won't like the product, return in to us in 14 days and get the
-          full refund.
-        </p>
-      </div>
-      <div class="pros">
-        <img src="img/pros-logo-security.svg" alt="warranty" width="60" />
-        <h2>Warranty handling</h2>
-        <p>
-          If you find a defect in the product or a breakdown occurs, we will fix
-          it for free.
-        </p>
-      </div>
-      <div class="pros">
-        <img src="img/pros-logo-credit-card.svg" alt="credit card" width="60" />
-        <h2>Payment methods</h2>
-        <p>
-          We accept payment by cash, Visa and MasterCard, PayPal and many other
-          options
-        </p>
+      <div class="container">
+        <div class="pros">
+          <img src="img/pros-logo-cart.svg" alt="cart" class="icon" />
+          <h2>Next-day Delivery</h2>
+          <p>
+            Free next-day delivery to any corner of the USA for all orders over
+            $300.
+          </p>
+        </div>
+        <div class="pros">
+          <img src="img/pros-logo-cash.svg" alt="cash" class="icon" />
+          <h2>100% Money back</h2>
+          <p>
+            If you won't like the product, return in to us in 14 days and get
+            the full refund.
+          </p>
+        </div>
+        <div class="pros">
+          <img src="img/pros-logo-security.svg" alt="warranty" class="icon" />
+          <h2>Warranty handling</h2>
+          <p>
+            If you find a defect in the product or a breakdown occurs, we will
+            fix it for free.
+          </p>
+        </div>
+        <div class="pros">
+          <img
+            src="img/pros-logo-credit-card.svg"
+            alt="credit card"
+            class="icon"
+          />
+          <h2>Payment methods</h2>
+          <p>
+            We accept payment by cash, Visa and MasterCard, PayPal and many
+            other options
+          </p>
+        </div>
       </div>
     </section>
     <section class="contact" id="contact">
-      <div class="contact-left">
-        <form action="">
-          <input type="text" placeholder="Enter your full name*" required />
-          <br />
-          <input type="text" placeholder="Enter your phone number*" required />
-          <br />
-          <input type="email" placeholder="Enter your email*" required />
-          <br />
-          <input type="text" placeholder="Enter quantity*" required />
-          <br />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Enter a message"
-          ></textarea>
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-      <div class="contact-right">
-        <h2>Contacts</h2>
-        <p>
-          We are always happy to chat with you. Contact us in any convenient way
-          and we will answer all your questions.
-        </p>
-        <table>
-          <tr>
-            <td>Adress</td>
-            <td>93-40 Queens Blvd, Flushing, NY 11374, USA</td>
-          </tr>
-          <tr>
-            <td>Hours</td>
-            <td>Monday - Saturday: 11 AM - 9 PM Sunday: 11 AM - 7 PM</td>
-          </tr>
-          <tr>
-            <td>Contacts</td>
-            <td>+1 (234) 567 89 00 sofa@email.com</td>
-          </tr>
-        </table>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4147359377043!2d-73.86789958459445!3d40.730898779329806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e482aec40b1%3A0xf0e427633bfec4a0!2zOTMtNDAgUXVlZW5zIEJsdmQsIEZsdXNoaW5nLCBOWSAxMTM3NCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1617786741886!5m2!1sru!2sua"
-          width="300"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+      <div class="container">
+        <div class="contact-left">
+          <form action="">
+            <input type="text" placeholder="Enter your full name*" required />
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your phone number*"
+              required
+            />
+            <br />
+            <input type="email" placeholder="Enter your email*" required />
+            <br />
+            <input type="text" placeholder="Enter quantity*" required />
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter a message"
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="contact-right">
+          <h2>Contacts</h2>
+          <p>
+            We are always happy to chat with you. Contact us in any convenient
+            way and we will answer all your questions.
+          </p>
+          <table>
+            <tr>
+              <td>Adress</td>
+              <td>93-40 Queens Blvd, Flushing, NY 11374, USA</td>
+            </tr>
+            <tr>
+              <td>Hours</td>
+              <td>Monday - Saturday: 11 AM - 9 PM Sunday: 11 AM - 7 PM</td>
+            </tr>
+            <tr>
+              <td>Contacts</td>
+              <td>+1 (234) 567 89 00 sofa@email.com</td>
+            </tr>
+          </table>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4147359377043!2d-73.86789958459445!3d40.730898779329806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e482aec40b1%3A0xf0e427633bfec4a0!2zOTMtNDAgUXVlZW5zIEJsdmQsIEZsdXNoaW5nLCBOWSAxMTM3NCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1617786741886!5m2!1sru!2sua"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </section>
     <footer>
       <div class="upper">
         <div class="description">
-          <img src="img/shop-logo-white.png" alt="shop logo" />
+          <img
+            src="img/shop-logo-white.png"
+            class="footer-logo"
+            alt="shop logo"
+          />
           <p>
             We sell designer furniture, lamps & decor across the USA. We offer
             the best collections by American and European designers.
@@ -453,13 +486,13 @@
           <h3>Follow us</h3>
           <div>
             <a href="https://www.facebook.com/" target="_blank"
-              ><img src="img/facebook.svg" alt="" width="30"
+              ><img src="img/facebook.svg" alt="" class="icon"
             /></a>
             <a href="https://www.instagram.com/" target="_blank"
-              ><img src="img/inst.svg" alt="" width="30"
+              ><img src="img/inst.svg" alt="" class="icon"
             /></a>
             <a href="https://www.youtube.com/" target="_blank"
-              ><img src="img/youtube.svg" alt="" width="30"
+              ><img src="img/youtube.svg" alt="" class="icon"
             /></a>
           </div>
         </div>
