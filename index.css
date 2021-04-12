@@ -26,7 +26,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--main-grey);
+  background-color: var(--main-light);
 }
 .container {
   margin: auto;
