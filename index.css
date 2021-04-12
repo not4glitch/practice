@@ -4,8 +4,8 @@
 }
 :root {
   --primary-color: #7bb57c;
-  --main-black: #070707;
-  --main-grey: #f7f5f6;
+  --main-dark: #070707;
+  --main-light: #f7f5f6;
 }
 * {
   margin: 0;
@@ -58,10 +58,10 @@ header {
 }
 .best-selling-products . a {
   text-decoration: none;
-  color: var(--main-black);
+  color: var(--main-dark);
 }
 footer a {
-  color: var(--main-grey);
+  color: var(--main-light);
 }
 ul {
   list-style-type: none;
@@ -75,8 +75,8 @@ ul {
   width: 100%;
 }
 footer {
-  background-color: var(--main-black);
-  color: var(--main-grey);
+  background-color: var(--main-dark);
+  color: var(--main-light);
 }
 nav ul {
   display: none;
@@ -127,21 +127,21 @@ nav ul {
   text-decoration: none;
 }
 .go-to-btn a:hover {
-  background-color: var(--main-black);
-  border: 1.5px solid var(--main-black);
+  background-color: var(--main-dark);
+  border: 1.5px solid var(--main-dark);
 }
 .order-btn button:hover {
-  background-color: var(--main-black);
-  border: 1.5px solid var(--main-black);
+  background-color: var(--main-dark);
+  border: 1.5px solid var(--main-dark);
 }
 .trends-colorful a:hover {
-  background-color: var(--main-black);
-  border: 1.5px solid var(--main-black);
+  background-color: var(--main-dark);
+  border: 1.5px solid var(--main-dark);
 }
 .trends-blacknwhite a:hover {
-  background-color: var(--main-grey);
-  border: 1.5px solid var(--main-grey);
-  color: var(--main-black);
+  background-color: var(--main-light);
+  border: 1.5px solid var(--main-light);
+  color: var(--main-dark);
 }
 img {
   display: block;
