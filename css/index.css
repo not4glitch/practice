@@ -32,7 +32,7 @@ img {
 }
 /*Main content*/
 header {
-  background-image: url(/img/background-3.webp);
+  background-image: url(../img/background-3.webp);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -158,7 +158,7 @@ nav .wrapper {
 }
 /*First banner section*/
 .first-banner {
-  background-image: url(/img/first-banner-dots.webp);
+  background-image: url(../img/first-banner-dots.webp);
   background-repeat: repeat;
   padding-top: 160px;
   padding-bottom: 160px;
@@ -221,7 +221,7 @@ nav .wrapper {
 }
 /*Second banner section*/
 .second-banner {
-  background-image: url(/img/Background-0.webp);
+  background-image: url(../img/Background-0.webp);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -272,7 +272,7 @@ nav .wrapper {
   background-image: url(/img/ternds-colorful.webp);
 }
 .trends .trends-blacknwhite {
-  background-image: url(/img/\/trends-black.webp);
+  background-image: url(../img/trends-black.webp);
 }
 .trends .trends-blacknwhite,
 .trends .trends-colorful {
