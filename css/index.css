@@ -1,0 +1,549 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(/fonts/Poppins-Regular.ttf);
+}
+:root {
+  --primary-color: #7bb57c;
+  --main-dark: #070707;
+  --main-light: #f7f5f6;
+  --secondary-light: #ffffff;
+  --secondary-dark: #e7e0e0b7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--main-dark);
+}
+img {
+  display: block;
+}
+.colored {
+  color: var(--primary-color);
+}
+/*Main content*/
+header {
+  background-image: url(/img/background-3.webp);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+.upper-logo {
+  max-width: 108px;
+}
+.wrapper {
+  margin: auto;
+  max-width: 980px;
+}
+nav .wrapper {
+  display: flex;
+  padding: 2em 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper img {
+  display: inline-block;
+}
+.wrapper ul {
+  display: inline-block;
+}
+.wrapper ul li {
+  display: inline-block;
+  padding: 1em;
+}
+.wrapper ul li a {
+  font-size: 1.5rem;
+  color: var(--main-dark);
+  text-decoration: none;
+}
+.wrapper ul li a:hover {
+  color: var(--primary-color);
+}
+.wrapper ul .shop-now a {
+  border: solid 0.2em var(--primary-color);
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  font-size: 1rem;
+}
+.wrapper ul .shop-now a:hover {
+  background-color: var(--primary-color);
+  color: var(--main-light);
+}
+.intro .wrapper {
+  padding-top: 20em;
+}
+.intro .wrapper .container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intro .wrapper h1 {
+  font-size: 8.5rem;
+
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+.intro .wrapper h1 span {
+  color: var(--primary-color);
+}
+.intro .wrapper p {
+  font-size: 2rem;
+  padding: 1.6em 0em;
+}
+.intro .wrapper a {
+  border: solid 0.2em var(--primary-color);
+  border-radius: 0.35em;
+  background-color: var(--primary-color);
+  padding: 1em 1.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-light);
+}
+.intro .wrapper a:hover {
+  border: solid 0.2em var(--main-dark);
+  background-color: var(--main-dark);
+}
+.ham {
+  border: none;
+}
+.ham .open-menu {
+  display: none;
+}
+.ham .close-menu {
+  display: none;
+}
+/*Promo section*/
+.promo .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.promo .container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.promo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container {
+  max-width: 400px;
+  max-height: 200px;
+}
+.promo h2 {
+  padding-top: 1em;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+.promo a {
+  padding-top: 1em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.promo a:hover {
+  text-decoration: underline;
+}
+/*First banner section*/
+.first-banner {
+  background-image: url(/img/first-banner-dots.webp);
+  background-repeat: repeat;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.first-banner h2 {
+  font-size: 7.5rem;
+  text-align: center;
+}
+/*Best selling products*/
+.best-selling-products {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.best-selling-products h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.best-selling-products p {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.best-selling-products .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.best-selling-products .product-card {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.product-card h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 1em;
+}
+.product-card .price {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  padding: 0.6em;
+}
+.product-card .order-btn button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 1em;
+  color: var(--main-light);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.product-card .order-btn button:hover {
+  background-color: var(--main-dark);
+  border: 1px solid var(--main-dark);
+}
+/*Second banner section*/
+.second-banner {
+  background-image: url(/img/Background-0.webp);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+.second-banner h2 {
+  font-size: 9.5rem;
+  padding-top: 2em;
+}
+.second-banner .container {
+  max-width: 600px;
+  margin-left: 3em;
+}
+.second-banner p {
+  padding-top: 1.5em;
+  font-size: 1.8rem;
+  line-height: 2em;
+}
+.second-banner .go-to-btn {
+  display: inline-block;
+  color: var(--main-light);
+  border: solid 0.2em var(--primary-color);
+  border-radius: 0.35em;
+  background-color: var(--primary-color);
+  padding: 0.7em;
+  margin-top: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.second-banner .go-to-btn:hover {
+  color: var(--main-light);
+  border: solid 0.2em var(--main-dark);
+  background-color: var(--main-dark);
+}
+
+.second-banner .go-to-btn a {
+  color: var(--main-light);
+}
+/*Trends sction*/
+.trends .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+.trends .trends-colorful {
+  background-image: url(/img/ternds-colorful.webp);
+}
+.trends .trends-blacknwhite {
+  background-image: url(/img/\/trends-black.webp);
+}
+.trends .trends-blacknwhite,
+.trends .trends-colorful {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  margin-left: 0.8rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.trends .text-content {
+  padding-left: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.text-content h3 {
+  font-size: 1.2rem;
+  padding-bottom: 3em;
+}
+.text-content h2 {
+  font-size: 2.2rem;
+  padding-bottom: 0.8em;
+}
+.text-content p {
+  padding-bottom: 2em;
+}
+.trends-blacknwhite .text-content {
+  color: var(--main-light);
+}
+.trends a {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 1em;
+  color: var(--main-light);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.trends-colorful a:hover {
+  background-color: var(--main-dark);
+  border: 1px solid var(--main-dark);
+}
+.trends-blacknwhite a:hover {
+  background-color: var(--main-light);
+  border: 1px solid var(--main-light);
+  color: var(--main-dark);
+}
+/*Favorite section*/
+.armchairs .container,
+.lamps .container,
+.tables .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 1rem;
+}
+.favorite .container {
+  padding-left: 1.2rem;
+}
+.product-favorite {
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+  text-align: center;
+}
+.favorite h2 {
+  font-size: 4rem;
+  padding-bottom: 0.5em;
+}
+.description {
+  font-size: 2rem;
+  padding-bottom: 2em;
+}
+.product-favorite h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.product-favorite .price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+.fav-order-btn button {
+  background-color: var(--secondary-light);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 1em;
+  color: var(--main-dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.fav-order-btn button:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--main-light);
+}
+
+/*Partners section*/
+.partners img {
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+  margin: 0.2rem;
+}
+.partners-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0.1rem;
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+/*Top brands*/
+
+.top-brands img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-brands {
+  background-color: var(--secondary-dark);
+}
+.top-brands .top-kuko,
+.top-brands .top-landstrom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.1rem;
+  padding: 3rem;
+}
+.top-brands .container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-light);
+  padding: 6rem;
+}
+.top-brands .container p {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+.top-brands .container h2 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.top-brands .container .description {
+  font-size: 3rem;
+}
+.top-brands .container a {
+  display: inline-block;
+  background-color: var(--secondary-light);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--main-dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.top-brands .container a:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-light);
+}
+
+/*Media querries*/
+@media screen and (max-width: 975px) {
+  .promo .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  /*Come back here later !!!)*/
+  .img-container {
+    max-width: 700px;
+    max-height: 900px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .ham .open-menu {
+    display: block;
+  }
+  .intro .wrapper {
+    padding: 3em;
+  }
+  .wrapper ul {
+    display: none;
+  }
+  .intro .wrapper h1 {
+    font-size: 5rem;
+  }
+  .upper-logo {
+    max-width: 78px;
+  }
+  .first-banner h2 {
+    font-size: 5.5rem;
+    text-align: center;
+  }
+  /*Second banner*/
+  .second-banner h2 {
+    font-size: 5rem;
+    padding-top: 2em;
+  }
+  .second-banner p {
+    padding-top: 1.5em;
+    font-size: 1.4rem;
+    line-height: 2em;
+  }
+  .top-brands .container p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .top-brands .container h2 {
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+  }
+  .top-brands .container .description {
+    font-size: 1.8rem;
+  }
+  .top-brands .container a {
+    font-size: 1.2rem;
+  }
+}
+/*Animation*/
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*TABS styling*/
+#armchairs {
+  display: block;
+}
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  color: var(--primary-color);
+}
+
+.tab button.active {
+  border-bottom: solid 2px var(--primary-color);
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
