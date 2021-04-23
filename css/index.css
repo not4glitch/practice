@@ -422,7 +422,8 @@ nav .wrapper {
   padding-bottom: 3rem;
 }
 .top-brands .container .description {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
 .top-brands .container a {
   display: inline-block;
