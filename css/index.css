@@ -50,6 +50,9 @@ nav .wrapper {
   justify-content: space-between;
   align-items: center;
 }
+.upper-nav .upper-logo {
+  display: none;
+}
 .wrapper img {
   display: inline-block;
 }
@@ -114,15 +117,15 @@ nav .wrapper {
   border: solid 0.2em var(--main-dark);
   background-color: var(--main-dark);
 }
-.ham {
+.ham-open,
+.ham-close {
   border: none;
 }
-.ham .open-menu {
+.ham-open,
+.ham-close {
   display: none;
 }
-.ham .close-menu {
-  display: none;
-}
+
 /*Promo section*/
 .promo .wrapper {
   display: flex;
@@ -352,7 +355,8 @@ nav .wrapper {
 }
 .product-favorite h3 {
   font-size: 1.5rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .product-favorite .price {
   font-size: 1.5rem;
@@ -456,17 +460,24 @@ nav .wrapper {
     max-height: 900px;
   }
 }
-
 @media screen and (max-width: 1023px) {
-  .ham .open-menu {
+  .ham-open,
+  .ham-close {
     display: block;
   }
+
   .intro .wrapper {
     padding: 3em;
   }
-  .wrapper ul {
-    display: none;
+  .wrapper .primary-nav {
+    display: block;
+    /* right: -100%; */
   }
+  .wrapper .primary-nav .ham-close {
+    display: none;
+    position: fixed;
+  }
+
   .intro .wrapper h1 {
     font-size: 5rem;
   }
@@ -476,6 +487,43 @@ nav .wrapper {
   .first-banner h2 {
     font-size: 5.5rem;
     text-align: center;
+  }
+  /*Mobile view menu*/
+  .primary-nav {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background-color: var(--secondary-light);
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .primary-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    z-index: 999;
+    flex-direction: column;
+  }
+  .primary-nav ul li {
+    padding: 2rem;
+  }
+
+  .primary-nav button {
+    background-color: var(--secondary-light);
+    position: fixed;
+    display: block;
+    right: 0px;
+  }
+  .upper-nav {
+    margin: 1rem;
+    display: flex;
+  }
+  .upper-nav .upper-logo {
+    display: block;
+    margin: 1.5rem;
   }
   /*Second banner*/
   .second-banner h2 {
@@ -549,3 +597,6 @@ nav .wrapper {
   padding: 6px 12px;
 }
 /*Continue here*/
+.unactive {
+  right: -100%;
+}
