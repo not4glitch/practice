@@ -31,4 +31,34 @@ navBtn.forEach(function (menuLink) {
     closeMenu.style.display = "none";
   });
 });
-/* Continue here*/
+/* partner carousele*/
+let i = 1;
+for (let li of partnerCarousel.querySelectorAll("li")) {
+  li.style.position = "relative";
+  li.insertAdjacentHTML(
+    "beforeend",
+    `<div style="position:absolute;left:0;top:0">${i}</div>`
+  );
+  i++;
+}
+
+const width = 100;
+const count = 1;
+
+const list = partnerCarousel.querySelector("ul");
+const listElems = partnerCarousel.querySelectorAll("li");
+
+let position = 0;
+
+partnerCarousel.querySelector(".prev").onclick = function () {
+  position += width;
+  position = Math.min(position, 0);
+  list.style.marginLeft = position + "px";
+};
+
+partnerCarousel.querySelector(".next").onclick = function () {
+  position -= width;
+  position = Math.max(position, -width * (listElems.length - count));
+  list.style.marginLeft = position + "px";
+};
+/*clients carousele*/

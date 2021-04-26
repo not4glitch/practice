@@ -381,18 +381,59 @@ nav .wrapper {
 }
 
 /*Partners section*/
-.partners img {
-  display: flex;
-  flex-direction: column;
-  max-height: 10rem;
-  margin: 0.2rem;
+.partner-carousel {
+  position: relative;
+  min-width: 320px;
+  padding: 10px 40px;
 }
-.partners-imgs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 0.1rem;
-  padding-bottom: 5em;
-  padding-top: 5em;
+.partner-carousel img {
+  max-width: 130px;
+  display: block;
+  margin: 0.5rem;
+}
+/*arrow*/
+.partner-arrow img {
+  height: 30px;
+}
+.partner-arrow {
+  position: absolute;
+  top: 45px;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  line-height: 15px;
+  display: block;
+  background-color: var(--secondary-light);
+}
+.partner-arrow:focus {
+  outline: none;
+}
+.partner-arrow:hover {
+  cursor: pointer;
+}
+.prev {
+  left: 7px;
+}
+.next {
+  right: 7px;
+}
+
+.partner-gallery {
+  max-width: 900px;
+  overflow: hidden;
+}
+.partner-gallery ul {
+  height: 160px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.partner-gallery li {
+  display: inline-block;
 }
 /*Top brands*/
 
@@ -409,7 +450,7 @@ nav .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 0.1rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 .top-brands .container {
   display: flex;
@@ -445,7 +486,118 @@ nav .wrapper {
   border: 1px solid var(--primary-color);
   color: var(--secondary-light);
 }
+/*Testimonials section*/
+.avatar {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.judy {
+  background-image: url(/img/customer-judy.jfif);
+}
+.kyle {
+  background-image: url(/img/customer-kyle.jfif);
+}
+.hanna {
+  background-image: url(/img/customer-hanna.jfif);
+}
+.jim {
+  background-image: url(/img/customer-jim.jfif);
+}
+.karen {
+  background-image: url(/img/customer-karen.jfif);
+}
+.testimonials {
+  background-color: var(--secondary-dark);
+}
+.testimonials h2,
+.testimonials p {
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 3rem;
+  padding: 2rem;
+}
+.testimonials p {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.client-card {
+  background-color: var(--main-light);
+  margin: 1rem;
+  text-align: left;
+  max-width: 280px;
+  display: block;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 5rem;
+  line-height: 3rem;
+}
+.client-card h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+.client-card p {
+  line-height: 2rem;
+}
+.clients-carousel {
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+  max-width: 960px;
+  padding: 10px 40px;
+}
+.client-gallery {
+  max-width: 900px;
+  overflow: hidden;
+}
+.client-gallery ul {
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+}
 
+.client-gallery li {
+  display: inline-block;
+}
+.clients-arrow img {
+  height: 30px;
+}
+.clients-arrow {
+  position: absolute;
+  top: 200px;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  line-height: 0px;
+  display: block;
+  background-color: var(--secondary-dark);
+}
+.clients-arrow:focus {
+  outline: none;
+}
+.clients-arrow:hover {
+  cursor: pointer;
+}
+
+/* .image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+} */
 /*Media querries*/
 @media screen and (max-width: 975px) {
   .promo .wrapper {

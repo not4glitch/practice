@@ -276,19 +276,47 @@
                 </div>
               </div>
             </div>
-            <div class="partners">
-              <div class="partners-imgs">
-                <img src="img/partner-artvan-logo.png" alt="artvan logo" />
-                <img src="img/partner-ikea-logo.png" alt="ikea logo" />
-                <img src="img/partner-vitra-logo.png" alt="vitra logo" />
-                <img src="img/partner-walmart-logo.png" alt="walmart logo" />
-                <img
-                  src="img/partner-kronheims-logo.png"
-                  alt="kronheims logo"
-                />
-                <img src="img/partner-seamans-logo.png" alt="seamans logo" />
-                <img src="img/partner-idea-logo.png" alt="idea logo" />
+            <div class="partner-carousel" id="partnerCarousel">
+              <button class="partner-arrow prev">
+                <img src="img/arrow-left.png" alt="arrow-left" />
+              </button>
+              <div class="partner-gallery">
+                <ul class="partner-images">
+                  <li>
+                    <img src="img/partner-artvan-logo.png" alt="artvan logo" />
+                  </li>
+                  <li>
+                    <img src="img/partner-ikea-logo.png" alt="ikea logo" />
+                  </li>
+                  <li>
+                    <img src="img/partner-vitra-logo.png" alt="vitra logo" />
+                  </li>
+                  <li>
+                    <img
+                      src="img/partner-walmart-logo.png"
+                      alt="walmart logo"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/partner-kronheims-logo.png"
+                      alt="kronheims logo"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/partner-seamans-logo.png"
+                      alt="seamans logo"
+                    />
+                  </li>
+                  <li>
+                    <img src="img/partner-idea-logo.png" alt="idea logo" />
+                  </li>
+                </ul>
               </div>
+              <button class="partner-arrow next">
+                <img src="img/arrow-right.png" alt="arrow right" />
+              </button>
             </div>
           </div>
         </div>
@@ -329,75 +357,86 @@
         </div>
       </div>
     </section>
-    <!--
-    <section id="testimonials">
+
+    <section id="testimonials" class="testimonials">
       <div class="container">
         <h2>What Our Customers Say</h2>
         <p>We love your feedback on our products!</p>
-        <div class="clients">
-          <div>
-            <img src="img/customer-judy.jfif" alt="woman photo" />
-            <h2>Judy Peterson</h2>
-            <h3>New York</h3>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              necessitatibus perspiciatis earum repudiandae id expedita quis
-              quod quam vitae, maiores laborum numquam. Voluptates alias sit
-              veritatis recusandae quas! Ab, hic.
-            </blockquote>
-            <h3>October 28, 2018</h3>
+        <div class="clients-carousel" id="clientsCarousel">
+          <button class="clients-arrow prev">
+            <img src="img/arrow-left.png" alt="arrow-left" />
+          </button>
+          <div class="client-gallery">
+            <ul class="clients-cards">
+              <li class="client-card">
+                <div class="avatar judy"></div>
+                <h2>Judy Peterson</h2>
+                <h3>New York</h3>
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  necessitatibus perspiciatis earum repudiandae id expedita quis
+                  quod quam vitae, maiores laborum numquam. Voluptates alias sit
+                  veritatis recusandae quas! Ab, hic.
+                </blockquote>
+                <h3>October 28, 2018</h3>
+              </li>
+              <li class="client-card">
+                <div class="avatar kyle"></div>
+                <h2>Kyle Hudson</h2>
+                <h3>Houston</h3>
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  necessitatibus perspiciatis earum repudiandae id expedita quis
+                  quod quam vitae, maiores laborum numquam. Voluptates alias sit
+                  veritatis recusandae quas! Ab, hic.
+                </blockquote>
+                <h3>June 13, 2019</h3>
+              </li>
+              <li class="client-card">
+                <div class="avatar hanna"></div>
+                <h2>Hanna Levy</h2>
+                <h3>Boston</h3>
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  necessitatibus perspiciatis earum repudiandae id expedita quis
+                  quod quam vitae, maiores laborum numquam. Voluptates alias sit
+                  veritatis recusandae quas! Ab, hic.
+                </blockquote>
+                <h3>October 04, 2019</h3>
+              </li>
+              <li class="client-card">
+                <div class="avatar jim"></div>
+                <h2>Jim Mockeen</h2>
+                <h3>Chicago</h3>
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  necessitatibus perspiciatis earum repudiandae id expedita quis
+                  quod quam vitae, maiores laborum numquam. Voluptates alias sit
+                  veritatis recusandae quas! Ab, hic.
+                </blockquote>
+                <h3>January 18, 2020</h3>
+              </li>
+              <li class="client-card">
+                <div class="avatar karen"></div>
+                <h2>Karen Morning</h2>
+                <h3>Washington</h3>
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  necessitatibus perspiciatis earum repudiandae id expedita quis
+                  quod quam vitae, maiores laborum numquam. Voluptates alias sit
+                  veritatis recusandae quas! Ab, hic.
+                </blockquote>
+                <h3>February 03, 2020</h3>
+              </li>
+            </ul>
           </div>
-          <div>
-            <img src="img/customer-kyle.jfif" alt="man photo" />
-            <h2>Kyle Hudson</h2>
-            <h3>Houston</h3>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              necessitatibus perspiciatis earum repudiandae id expedita quis
-              quod quam vitae, maiores laborum numquam. Voluptates alias sit
-              veritatis recusandae quas! Ab, hic.
-            </blockquote>
-            <h3>June 13, 2019</h3>
-          </div>
-          <div>
-            <img src="img/customer-hanna.jfif" alt="woman photo" />
-            <h2>Hanna Levy</h2>
-            <h3>Boston</h3>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              necessitatibus perspiciatis earum repudiandae id expedita quis
-              quod quam vitae, maiores laborum numquam. Voluptates alias sit
-              veritatis recusandae quas! Ab, hic.
-            </blockquote>
-            <h3>October 04, 2019</h3>
-          </div>
-          <div>
-            <img src="img/customer-jim.jfif" alt="man photo" />
-            <h2>Jim Mockeen</h2>
-            <h3>Chicago</h3>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              necessitatibus perspiciatis earum repudiandae id expedita quis
-              quod quam vitae, maiores laborum numquam. Voluptates alias sit
-              veritatis recusandae quas! Ab, hic.
-            </blockquote>
-            <h3>January 18, 2020</h3>
-          </div>
-          <div>
-            <img src="img/customer-karen.jfif" alt="woman photo" />
-            <h2>Karen Morning</h2>
-            <h3>Washington</h3>
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              necessitatibus perspiciatis earum repudiandae id expedita quis
-              quod quam vitae, maiores laborum numquam. Voluptates alias sit
-              veritatis recusandae quas! Ab, hic.
-            </blockquote>
-            <h3>February 03, 2020</h3>
-          </div>
+          <button class="clients-arrow next">
+            <img src="img/arrow-right.png" alt="arrow right" />
+          </button>
         </div>
       </div>
     </section>
+    <!--
     <section id="aboutus">
       <div class="container">
         <div class="about-left">
