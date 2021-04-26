@@ -495,19 +495,19 @@ nav .wrapper {
   border-radius: 50%;
 }
 .judy {
-  background-image: url(/img/customer-judy.jfif);
+  background-image: url(../img/customer-judy.jfif);
 }
 .kyle {
-  background-image: url(/img/customer-kyle.jfif);
+  background-image: url(../img/customer-kyle.jfif);
 }
 .hanna {
-  background-image: url(/img/customer-hanna.jfif);
+  background-image: url(../img/customer-hanna.jfif);
 }
 .jim {
-  background-image: url(/img/customer-jim.jfif);
+  background-image: url(../img/customer-jim.jfif);
 }
 .karen {
-  background-image: url(/img/customer-karen.jfif);
+  background-image: url(../img/customer-karen.jfif);
 }
 .testimonials {
   background-color: var(--secondary-dark);
