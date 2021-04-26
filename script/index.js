@@ -35,15 +35,10 @@ navBtn.forEach(function (menuLink) {
 let i = 1;
 for (let li of partnerCarousel.querySelectorAll("li")) {
   li.style.position = "relative";
-  li.insertAdjacentHTML(
-    "beforeend",
-    `<div style="position:absolute;left:0;top:0">${i}</div>`
-  );
-  i++;
 }
 
 const width = 100;
-const count = 1;
+const count = 6;
 
 const list = partnerCarousel.querySelector("ul");
 const listElems = partnerCarousel.querySelectorAll("li");
@@ -62,3 +57,30 @@ partnerCarousel.querySelector(".next").onclick = function () {
   list.style.marginLeft = position + "px";
 };
 /*clients carousele*/
+let iter = 1;
+for (let li of clientsCarousel.querySelectorAll(".client-card")) {
+  li.style.position = "relative";
+}
+
+const widthClient = 300;
+const countClient = 3;
+
+const listClient = clientsCarousel.querySelector(".clients-cards");
+const listElemsClient = clientsCarousel.querySelectorAll(".client-card");
+
+let positionClients = 0;
+
+clientsCarousel.querySelector(".prev-client").onclick = function () {
+  positionClients += widthClient;
+  positionClients = Math.min(positionClients, 0);
+  listClient.style.marginLeft = positionClients + "px";
+};
+
+clientsCarousel.querySelector(".next-client").onclick = function () {
+  positionClients -= widthClient;
+  positionClients = Math.max(
+    positionClients,
+    -widthClient * (listElemsClient.length - countClient)
+  );
+  listClient.style.marginLeft = positionClients + "px";
+};
