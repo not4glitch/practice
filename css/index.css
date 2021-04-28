@@ -383,7 +383,7 @@ nav .wrapper {
 /*Partners section*/
 .partner-carousel {
   position: relative;
-  min-width: 320px;
+  min-width: 130px;
   padding: 10px 40px;
 }
 .partner-carousel img {
@@ -621,9 +621,14 @@ nav .wrapper {
     max-height: 900px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .wrapper .primary-nav .ham-close {
+    display: none;
+    position: fixed;
+  }
+}
 @media screen and (max-width: 1023px) {
-  .ham-open,
-  .ham-close {
+  .ham-open {
     display: block;
   }
 
@@ -664,12 +669,12 @@ nav .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 3rem;
     z-index: 999;
     flex-direction: column;
   }
   .primary-nav ul li {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .primary-nav button {

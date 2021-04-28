@@ -28,7 +28,6 @@ closeMenu.addEventListener("click", function () {
 navBtn.forEach(function (menuLink) {
   menuLink.addEventListener("click", function () {
     mobileMenu.classList.add("unactive");
-    closeMenu.style.display = "none";
   });
 });
 /* partner carousele*/
