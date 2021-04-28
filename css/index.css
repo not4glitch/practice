@@ -8,6 +8,7 @@
   --main-light: #f7f5f6;
   --secondary-light: #ffffff;
   --secondary-dark: #e7e0e0b7;
+  --footer-dark: #181717d7;
 }
 * {
   margin: 0;
@@ -512,6 +513,7 @@ nav .wrapper {
 }
 .testimonials {
   background-color: var(--secondary-dark);
+  padding-bottom: 5rem;
 }
 .testimonials h2,
 .testimonials p {
@@ -592,7 +594,91 @@ nav .wrapper {
 .clients-arrow:hover {
   cursor: pointer;
 }
+/*Footer section*/
+footer {
+  background-color: var(--footer-dark);
+  color: var(--secondary-light);
+}
+footer a {
+  color: var(--secondary-light);
+}
+footer a:hover {
+  color: var(--primary-color);
+}
+footer .footer-img {
+  display: block;
+  max-width: 2rem;
+  padding: 0.1rem;
+  fill: var(--secondary-light);
+}
+footer .footer-img:hover {
+  fill: var(--primary-color);
+}
 
+footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0.1rem;
+  padding: 5rem;
+}
+footer .description {
+  text-align: left;
+  font-size: 1.5rem;
+  max-width: 150px;
+  line-height: 2rem;
+}
+footer .description img {
+  max-width: 100px;
+  padding-bottom: 2rem;
+}
+footer .refrence-first,
+footer .refrence-second {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  line-height: 4rem;
+}
+footer .follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+footer .social-networks {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter h3 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.newsletter input[type="email"] {
+  min-height: 3rem;
+  border-radius: 0.3em;
+  background-color: var(--secondary-light);
+}
+.newsletter input[type="submit"] {
+  min-height: 3rem;
+  min-width: 9rem;
+  margin-top: 3rem;
+  border: solid 1px var(--primary-color);
+  border-radius: 0.3em;
+  color: var(--secondary-light);
+  background-color: var(--primary-color);
+}
+.newsletter input[type="submit"]:hover {
+  border: solid 1px var(--secondary-light);
+  border-radius: 0.3em;
+  color: var(--main-dark);
+  background-color: var(--secondary-light);
+}
 /* .image-cropper {
   width: 100px;
   height: 100px;
