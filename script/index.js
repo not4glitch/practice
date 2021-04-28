@@ -28,6 +28,7 @@ closeMenu.addEventListener("click", function () {
 navBtn.forEach(function (menuLink) {
   menuLink.addEventListener("click", function () {
     mobileMenu.classList.add("unactive");
+    closeMenu.style.display = "none";
   });
 });
 /* partner carousele*/
@@ -37,7 +38,7 @@ for (let li of partnerCarousel.querySelectorAll("li")) {
 }
 
 const width = 130;
-const count = 1;
+const count = 6;
 
 const list = partnerCarousel.querySelector("ul");
 const listElems = partnerCarousel.querySelectorAll("li");
@@ -62,7 +63,7 @@ for (let li of clientsCarousel.querySelectorAll(".client-card")) {
 }
 
 const widthClient = 300;
-const countClient = 1;
+const countClient = 3;
 
 const listClient = clientsCarousel.querySelector(".clients-cards");
 const listElemsClient = clientsCarousel.querySelectorAll(".client-card");
