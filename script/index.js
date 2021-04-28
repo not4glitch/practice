@@ -36,8 +36,8 @@ for (let li of partnerCarousel.querySelectorAll("li")) {
   li.style.position = "relative";
 }
 
-const width = 100;
-const count = 6;
+const width = 130;
+const count = 1;
 
 const list = partnerCarousel.querySelector("ul");
 const listElems = partnerCarousel.querySelectorAll("li");
@@ -62,7 +62,7 @@ for (let li of clientsCarousel.querySelectorAll(".client-card")) {
 }
 
 const widthClient = 300;
-const countClient = 3;
+const countClient = 1;
 
 const listClient = clientsCarousel.querySelector(".clients-cards");
 const listElemsClient = clientsCarousel.querySelectorAll(".client-card");
