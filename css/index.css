@@ -618,7 +618,7 @@ footer .footer-img:hover {
 footer .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 0.1rem;
+  grid-gap: 3rem;
   padding: 5rem;
 }
 footer .description {
@@ -660,13 +660,14 @@ footer .social-networks {
   font-weight: 100;
 }
 .newsletter input[type="email"] {
-  min-height: 3rem;
+  min-height: 4rem;
+  min-width: 100%;
   border-radius: 0.3em;
   background-color: var(--secondary-light);
 }
 .newsletter input[type="submit"] {
-  min-height: 3rem;
-  min-width: 9rem;
+  min-height: 4rem;
+  min-width: 100%;
   margin-top: 3rem;
   border: solid 1px var(--primary-color);
   border-radius: 0.3em;
